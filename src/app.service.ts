@@ -7,10 +7,14 @@ export class AppService {
   }
 
   getOtherPost():string {
-    return "testing other router here now!!";
+    return "send dates with sucess";
   }
 
   getOtherPosts():string {
-    return "get message user by my id"
+    return "get message user by my id here now"
+  }
+
+  getNewMessage():string {
+   return "just make testing in my other router"
   }
 }
