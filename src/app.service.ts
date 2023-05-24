@@ -2,7 +2,15 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hi I come back put my hands on the code, to fixed and get evolv my knowlegde each day more';
+  getMessage(): string {
+    return 'Project message, new project backend here now !';
+  }
+
+  getOtherPost():string {
+    return "testing other router here now!!";
+  }
+
+  getOtherPosts():string {
+    return "get message user by my id"
   }
 }
