@@ -10,12 +10,12 @@ export class AppController {
   @Get()
   // standarn router
   getMessage(){
-   // return this.appService.getMessage();
+    //return this.appService.getMessage();
   }
   
    // send message
   @Post()
-   getOtherPosts(@Body() body:any) {
+   getOtherPosts(@Body() body:CreateMessageDto) {
     console.log(body)
    }
   

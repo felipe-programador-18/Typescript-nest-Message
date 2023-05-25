@@ -7,10 +7,9 @@ GET  http://localhost:3000/message
 ## to send my message
 
 POST http://localhost:3000/message
-
 content-type: application/json
 {
-"content":"hi there testing here now my content"
+"content":"hi there my brother"
 }
 
 ## to get my message by id
