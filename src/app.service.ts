@@ -13,8 +13,4 @@ export class AppService {
   getOtherPosts():string {
     return "get message user by my id here now"
   }
-
-  getNewMessage():string {
-   return "just make testing in my other router"
-  }
 }

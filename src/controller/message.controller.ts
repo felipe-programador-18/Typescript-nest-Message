@@ -12,11 +12,6 @@ export class AppController {
   getMessage(): string {
     return this.appService.getMessage();
   }
-
-  @Get("test")
-  getNewMessage():string{
-    return this.appService.getNewMessage();
-  }
   
    // send message
    @Post()
