@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
 import { AppService } from '../app.service';
 import { CreateMessageDto } from 'src/dtos/create.message.dto';
 
@@ -9,19 +9,19 @@ export class AppController {
 
   @Get()
   // standarn router
-  getMessage(): string {
-    return this.appService.getMessage();
+  getMessage(){
+   // return this.appService.getMessage();
   }
   
    // send message
-   @Post()
-   getOtherPosts(@Body() body:CreateMessageDto) {
+  @Post()
+   getOtherPosts(@Body() body:any) {
     console.log(body)
    }
   
   // get by id
   @Get("/:id")
-  getOtherPost(@Body() id:CreateMessageDto){
+  getOtherPost(@Param("id") id:CreateMessageDto){
     console.log(id)
   }
  
